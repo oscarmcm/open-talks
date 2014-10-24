@@ -4,7 +4,7 @@
 3 info using node@v0.10.31
 4 error install Couldn't read dependencies
 5 verbose stack Error: Failed to parse json
-5 verbose stack Unexpected token }
+5 verbose stack Unexpected string
 5 verbose stack     at parseError (/usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:378:25)
 5 verbose stack     at parseJson (/usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:85:51)
 5 verbose stack     at /usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:59:33
@@ -19,7 +19,7 @@
 11 error file /home/oscar/Code/Nodejs/FudCon-2014/Demo/package.json
 12 error code EJSONPARSE
 13 error Failed to parse json
-13 error Unexpected token }
+13 error Unexpected string
 14 error File: /home/oscar/Code/Nodejs/FudCon-2014/Demo/package.json
 15 error Failed to parse package.json data.
 15 error package.json must be actual JSON, not just JavaScript.
