@@ -8,6 +8,7 @@
     "browserify": "browserify app.js | uglifyjs > public/js/bundle.js",
     "build": "npm run browserify ",
     "start": "npm run watch & nodemon server.js"
+    "test": "grunt --verbose"
   },
   "dependencies": {
     "diskdb": "^0.1.14",
@@ -16,7 +17,10 @@
   },
   "devDependencies": {
     "browserify": "~6.0.3",
-    "nodemon": "^1.2.1"
+    "nodemon": "^1.2.1",
+    "grunt": "0.4.1",
+    "grunt-cli": "0.1.9",
+    "grunt-contrib-jshint": "0.6.0"
   },
   "browserify": {
     "transform": [
