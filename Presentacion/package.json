@@ -1,5 +1,5 @@
 {
-  "name": "Fudcon Presentation",
+  "name": "Fudcon-Presentation",
   "version": "0.0.0",
   "description": "Control HTML5 Presentations with node.js",
   "main": "app.js",
@@ -7,7 +7,21 @@
     "node-static": "~0.6.6",
     "socket.io": "~0.9.13"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "browserify": "~6.0.3",
+    "nodemon": "^1.2.1",
+    "grunt": "0.4.1",
+    "grunt-cli": "0.1.9",
+    "grunt-contrib-jshint": "0.6.0"
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  },
+  "scripts": {
+    "test": "grunt --verbose"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/dfcb/controldeck.js.git"
