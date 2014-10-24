@@ -1,18 +1,49 @@
 {
-  "name": "Integracion continua en el desarrollo de aplicaciones multiplataforma",
-  "version": "0.1",
-  "description": "HTML5 Presentations for FudCon Managua Nicaragua 2014",
-  "main": "app.js",
-  "dependencies": {
-    "node-static": "~0.6.6",
-    "socket.io": "~0.9.13"
+  "name": "Fudcon-Demo",
+  "version": "0.0.1",
+  "description": "Demo for FudCon Managua Nicaragua 2014",
+  "main": "index.html",
+  "scripts": {
+    "watch": "watchify app.js -o public/js/bundle.js -v",
+    "browserify": "browserify app.js | uglifyjs > public/js/bundle.js",
+    "build": "npm run browserify ",
+    "start": "npm run watch & nodemon server.js"
   },
-  "devDependencies": {},
+  "dependencies": {
+    "diskdb": "^0.1.14",
+    "bcrypt-nodejs": "0.0.3",
+    "weather-js": "^1.0.0"
+  },
+  "devDependencies": {
+    "browserify": "~6.0.3",
+    "nodemon": "^1.2.1"
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  },
   "repository": {
     "type": "git",
-    "url": "git://github.com/dfcb/controldeck.js.git"
+    "url": ""
   },
-  "keywords": ["fudcon"],
+  "keywords": [
+	  "fudcon", 
+	  "nodejs",
+	  "webkit",
+	  "keepassx"
+  ],
+  "window": {
+    "toolbar": true,
+    "resizable": false,
+    "width": 1000,
+    "height": 600,
+    "min_width": 600,
+    "min_height": 400,
+    "max_width": 1000,
+    "max_height": 600,
+    "position": "center"
+  },
   "author": "Oscar Cortez",
   "license": "MIT"
 }
