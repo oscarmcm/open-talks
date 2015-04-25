@@ -1,0 +1,28 @@
+{
+  "name": "FLISoL-2015",
+  "version": "1.0.0",
+  "homepage": "https://github.com/oscarmcm/open-talks",
+  "authors": [
+    "Oscar Cortez <om.cortez.2010@gmail.com>"
+  ],
+  "description": "Presentation about polymer and web components, build with polymer\"",
+  "main": "index.html",
+  "keywords": [
+    "polymer",
+    "web-components",
+    "presentation",
+    "flisol"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ninja-presentation": "~0.3.0",
+    "webcomponentsjs": "~0.6.1"
+  }
+}
